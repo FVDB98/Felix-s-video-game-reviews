@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Kanit";
+}
+
+html{
+
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    padding-top: 40px;
+}
+
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links ul li{
+    display: inline-block;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* HOME PAGE */
+.container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: darksalmon;
+}
+
+.details{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 10px 0 10px;
+}
+
+.details h1{
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.details p{
+    font-style: italic;
+}
+
+.latest{
+    position: absolute;
+    text-align: center;
+    bottom: 40px;
+    width: 100%;
+}
+
+.latest h4 a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+span{
+    color: white
+}
+
