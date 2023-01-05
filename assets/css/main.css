@@ -14,8 +14,8 @@ html{
 .header{
     width: 100%;
     text-align: center;
-    position: fixed;
     z-index: 1;
+    position: fixed;
     padding-top: 40px;
 }
 
@@ -30,7 +30,7 @@ html{
 }
 
 .nav-links ul li a{
-    text-decoration: none;
+    text-decoration: underline;
     padding: 15px;
     color: black;
     font-size: 22px;
@@ -39,20 +39,16 @@ html{
 
 /* HOME PAGE */
 .container{
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100vh;
 }
 
 .outer{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
-    background-color: darksalmon;
+    background-image: linear-gradient(rgba(233, 150, 122, 0.4), rgba(233, 150, 122, 0.4)), url("https://images4.alphacoders.com/982/982990.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .details{
@@ -84,12 +80,83 @@ html{
 }
 
 .latest h4 a{
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     font-size: 22px;
 }
 
-span{
-    color: white
+span a{
+    color: white;
+    text-decoration: underline;
 }
 
+
+/* TOP 5 CONTENT PREVIEW */
+.content-container{
+    padding: 20px;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 40px;
+    background-color: #ffdab9;
+}
+
+.content-container h1{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.content-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-50vw + 50%);
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    background-color: white;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.article-preview{
+    border-radius: 5px;
+    background-color: #FFBF86;
+    padding: 0;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.6);;
+    max-width: 450px;
+}
+
+.article-preview__link{
+    text-decoration: none;
+    color: black;
+}
+
+.article-preview__image{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.article-preview__inner{
+    text-align: center;
+    padding: 20px;
+}
+
+.article-preview__heading{
+    margin-top: 0;
+}
+
+.article-preview__excerpt{
+
+}
